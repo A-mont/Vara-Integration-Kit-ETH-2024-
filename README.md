@@ -24,7 +24,7 @@ Asegúrate de tener instaladas las siguientes dependencias antes de comenzar:
 2. Navega al directorio del proyecto:
 
     ```bash
-    cd Vara-Integration-Kit-ETH-2024-/frontend
+    cd Vara-Integration-Kit-ETH-2024-/Frontend
     ```
 
 3. Instala las dependencias:
