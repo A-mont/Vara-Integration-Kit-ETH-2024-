@@ -27,19 +27,13 @@ Asegúrate de tener instaladas las siguientes dependencias antes de comenzar:
     cd Vara-Integration-Kit-ETH-2024-/frontend
     ```
 
-3. Navega al directorio del proyecto:
-
-    ```bash
-    cd Vara-Integration-Kit-ETH-2024-/frontend
-    ```
-
-4. Instala las dependencias:
+3. Instala las dependencias:
 
     ```bash
     yarn install
     ```
     o
-5. Arranca el proyecto en el localhost:
+4. Inicia el proyecto en el localhost:
 
     ```bash
     yarn start
