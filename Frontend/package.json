@@ -9,6 +9,8 @@
     "@gear-js/api": "0.33.2",
     "@gear-js/react-hooks": "0.6.4",
     "@gear-js/ui": "0.5.19",
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.1",
     "@mantine/form": "6.0.8",
     "@polkadot/api": "10.3.4",
     "@polkadot/extension-dapp": "0.45.5",
