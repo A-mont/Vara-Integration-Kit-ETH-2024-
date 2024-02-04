@@ -1,12 +1,16 @@
 import { openai } from "./openAIClient";
 
-async function chat() {
+async function chat(userInput: string) {
   const completion = await openai.chat.completions.create({
     messages: [
       {
         role: "system",
         content:
-          "Necesito aprender lo necesario de inglés para leer documentación general web 3 y código de rust. Hazme preguntas, una por una, y dame 4 opciones de respuesta. Si respondo correctamente, ve subiendo el nivel gradualmente en la siguiente pregunta hasta que me equivoque y explícame en qué me equivoqué e invítame a estudiar. En seguida prepara una pregunta similar para ver si ya puedo responder",
+          "Como IA especializada en Auxiliar al aprendizaje, el objetivo es explicar conceptos de manera sencilla y clara. ¿En qué puedo ayudarte hoy?",
+      },
+      {
+        role: "user",
+        content: userInput,
       },
     ],
 

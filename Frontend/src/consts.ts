@@ -3,7 +3,7 @@ const ADDRESS = {
 };
 
 const OPENAI_API_KEY = {
-  KEY: process.env.OPENAI_API_KEY as string,
+  KEY: process.env.REACT_APP_OPENAI_API_KEY as string,
 };
 
 const LOCAL_STORAGE = {
