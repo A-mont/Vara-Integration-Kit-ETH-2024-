@@ -19,7 +19,7 @@ function Account() {
 
 
     useEffect(() => {
-      if(!account){
+      if(account){
             navigate('/main')
         }
 
