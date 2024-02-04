@@ -21,7 +21,7 @@ function Account() {
 
 
     useEffect(() => {
-      if(account&&location.pathname==='/home'){
+      if(account&&location.pathname==='/'){
             navigate('/main')
         }
 
