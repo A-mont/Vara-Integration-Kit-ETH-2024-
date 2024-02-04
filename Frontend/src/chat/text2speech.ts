@@ -1,16 +1,11 @@
 // TEXT 2 SPEECH
 import fs from "fs";
 import path from "path";
-import OpenAI from "openai";
-import dotenv from "dotenv";
-
-dotenv.config();
-
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+import { openai } from "./openAIClient";
 
 const speechFile = path.resolve("./speech.mp3");
 
-async function openai3() {
+async function text2speech() {
   const mp3 = await openai.audio.speech.create({
     model: "tts-1",
     voice: "alloy",
@@ -20,7 +15,7 @@ async function openai3() {
   const buffer = Buffer.from(await mp3.arrayBuffer());
   await fs.promises.writeFile(speechFile, buffer);
 }
-openai3();
+export default text2speech;
 
 //REPRODUCCIÓN DE AUDIO REALTIME
 //from openai import OpenAI

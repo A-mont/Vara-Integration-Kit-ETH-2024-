@@ -1,11 +1,6 @@
-import OpenAI from "openai";
-import dotenv from "dotenv";
+import { openai } from "./openAIClient";
 
-dotenv.config();
-
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-
-async function openai2() {
+async function chat() {
   const completion = await openai.chat.completions.create({
     messages: [
       {
@@ -17,7 +12,9 @@ async function openai2() {
 
     model: "gpt-4-turbo-preview",
   });
-
   console.log(completion.choices[0]);
+  const text = completion.choices[0].message.content;
+
+  return text;
 }
-openai2();
+export { chat };
