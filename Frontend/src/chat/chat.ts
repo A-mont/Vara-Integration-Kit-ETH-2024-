@@ -6,7 +6,7 @@ async function chat(userInput: string) {
       {
         role: "system",
         content:
-          "Como IA especializada en Auxiliar al aprendizaje, el objetivo es explicar conceptos de manera sencilla y clara. ¿En qué puedo ayudarte hoy?",
+          "Como IA especializada en Auxiliar al aprendizaje, el objetivo es explicar el concepto que te de el usuario de manera sencilla y clara en inglés y español",
       },
       {
         role: "user",
