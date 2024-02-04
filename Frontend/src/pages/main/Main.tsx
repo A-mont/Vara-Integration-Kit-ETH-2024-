@@ -1,11 +1,26 @@
+import { useState } from 'react'
+import { Dialog } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Table } from '../../components'
 
+const navigation = [
+    { name: 'Product', href: '#' },
+    { name: 'Features', href: '#' },
+    { name: 'Marketplace', href: '#' },
+    { name: 'Company', href: '#' },
+]
 
+function Main () {
 
-function Main() {
-  return (
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-    <h1>Hola Mundo</h1>
-  );
+    return (
+        <div className="bg-base-200">
+            <div className="mx-auto py-10">
+                <Table />
+            </div>
+        </div>
+    )
 }
 
 export { Main };

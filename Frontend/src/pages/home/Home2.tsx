@@ -47,12 +47,12 @@ function Home() {
                     </div>
                     <div className="mt-10 flex items-center justify-center gap-x-6">
                         <a
-                            href="/home"
+                            href="/main"
                             className="btn bg-primary"
                         >
                             Get started
                         </a>
-                        <a href="/home" className="btn bg-secondary">
+                        <a href="/main" className="btn bg-secondary">
                             Learn more <span aria-hidden="true">→</span>
                         </a>
                     </div>
