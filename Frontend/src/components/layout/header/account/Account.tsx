@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react'
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useAccount } from '@gear-js/react-hooks';
 import { AccountsModal } from './accounts-modal';
 import { Wallet } from './wallet';
 
 function Account() {
     const navigate = useNavigate();
+    const location = useLocation();
     const { account, accounts } = useAccount();
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -16,14 +17,15 @@ function Account() {
     const closeModal = () => {
         setIsModalOpen(false);
     };
+    console.log(location.pathname)
 
 
     useEffect(() => {
-      if(account){
+      if(account&&location.pathname==='/home'){
             navigate('/main')
         }
 
-    }, [account, navigate])
+    }, [account, navigate, location.pathname])
 
     return (
         <>
