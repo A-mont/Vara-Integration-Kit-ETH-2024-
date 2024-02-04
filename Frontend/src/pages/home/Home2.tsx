@@ -22,7 +22,7 @@ function Home() {
                     </h1>
                     <p className="mt-6 text-lg leading-8 text-gray-600">¡Aprenda inglés técnico para impulsar su carrera en tecnologías Web3!</p>
 
-                    <div className="carousel max-h-10 rounded-box">
+                    <div className="mt-4 carousel max-h-10 rounded-box">
                         <div className="carousel-item max-w-20">
                             <img src="/LOGOS5MAY/Astar.png" alt="Burger" />
                         </div> 
@@ -42,7 +42,7 @@ function Home() {
                             <img src="/LOGOS5MAY/icp.jpg" alt="Burger" />
                         </div> 
                         <div className="carousel-item max-w-20">
-                            <img src="/LOGOS5MAY/Astar.png" alt="Burger" />
+                            <img src="/LOGOS5MAY/thegraph.png" alt="Burger" />
                         </div> 
                     </div>
                     <div className="mt-10 flex items-center justify-center gap-x-6">

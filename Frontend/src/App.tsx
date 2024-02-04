@@ -9,6 +9,7 @@ function Component() {
   const { isAccountReady } = useAccount();
 
   const isAppReady = isApiReady && isAccountReady;
+    console.log(isAccountReady)
 
   return (
     <>
