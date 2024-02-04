@@ -10,6 +10,7 @@ const navigation = [
 ]
 
 function Home() {
+
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
@@ -22,25 +23,25 @@ function Home() {
                     <p className="mt-6 text-lg leading-8 text-gray-600">¡Aprenda inglés técnico para impulsar su carrera en tecnologías Web3!</p>
 
                     <div className="carousel max-h-10 rounded-box">
-                        <div className="carousel-item">
+                        <div className="carousel-item max-w-20">
                             <img src="/LOGOS5MAY/Astar.png" alt="Burger" />
                         </div> 
-                        <div className="carousel-item">
+                        <div className="carousel-item max-w-20">
                             <img src="/LOGOS5MAY/avalanche.png" alt="Burger" />
                         </div> 
-                        <div className="carousel-item">
+                        <div className="carousel-item max-w-20">
                             <img src="/LOGOS5MAY/VARA.png" alt="Burger" />
                         </div> 
-                        <div className="carousel-item">
+                        <div className="carousel-item max-w-20">
                             <img src="/LOGOS5MAY/near.png" alt="Burger" />
                         </div> 
-                        <div className="carousel-item">
-                            <img src="/LOGOS5MAY/Astar.png" alt="Burger" />
+                        <div className="carousel-item max-w-20">
+                            <img src="/LOGOS5MAY/push.jpeg" alt="Burger" />
                         </div> 
-                        <div className="carousel-item">
-                            <img src="/LOGOS5MAY/Astar.png" alt="Burger" />
+                        <div className="carousel-item max-w-20">
+                            <img src="/LOGOS5MAY/icp.jpg" alt="Burger" />
                         </div> 
-                        <div className="carousel-item">
+                        <div className="carousel-item max-w-20">
                             <img src="/LOGOS5MAY/Astar.png" alt="Burger" />
                         </div> 
                     </div>
